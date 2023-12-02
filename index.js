@@ -22,4 +22,20 @@ inquirer.prompt([
     name: 'test',
     message: 'How about instructions on testing?'
   },
+  {
+    type: 'list',
+    name: 'license',
+    message: 'Choose your license!',
+    choices: ['ISC', 'MIT', 'Apache2.0']
+  },
+  {
+    type: 'input',
+    name: 'username',
+    message: 'What is your GitHub username?'
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'And your email address?'
+  }
 ])
