@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generate = require('./generateMarkdown');
 
 inquirer.prompt([
   {
@@ -38,4 +39,6 @@ inquirer.prompt([
     name: 'email',
     message: 'And your email address?'
   }
-])
+]).then((userData) => {
+  const newMarkdown = generateMarkdown.js(userData);
+});
