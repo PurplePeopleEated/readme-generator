@@ -10,6 +10,11 @@ inquirer.prompt([
   },
   {
     type: 'input',
+    name: 'description',
+    message: 'What is a good description for your project?'
+  },
+  {
+    type: 'input',
     name: 'install',
     message: 'The installation instructions?'
   },
