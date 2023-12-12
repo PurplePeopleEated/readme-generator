@@ -40,5 +40,11 @@ inquirer.prompt([
     message: 'And your email address?'
   }
 ]).then((userData) => {
-  const newMarkdown = generateMarkdown.js(userData);
+  console.log(userData);
+  const newMarkdown = generateMarkdown(userData);
+  console.log(newMarkdown);
+  fs.writeFile('./utils/README.md', newMarkdown, (err) => {
+    if (err) throw err;
+    console.log('The file has been saved!');
+  }); 
 });
