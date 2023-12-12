@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generate = require('./generateMarkdown');
+const generateMarkdown = require('./generateMarkdown');
 
 inquirer.prompt([
   {
@@ -27,7 +27,7 @@ inquirer.prompt([
     type: 'list',
     name: 'license',
     message: 'Choose your license!',
-    choices: ['ISC', 'MIT', 'Apache2.0']
+    choices: ['ISC', 'MIT', 'Apache 2.0']
   },
   {
     type: 'input',
