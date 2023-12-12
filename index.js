@@ -43,6 +43,11 @@ inquirer.prompt([
     type: 'input',
     name: 'email',
     message: 'And your email address?'
+  },
+  {
+    type: 'input',
+    name: 'contribute',
+    message: 'List any who helped you with this project.'
   }
 ]).then((userData) => {
   console.log(userData);
