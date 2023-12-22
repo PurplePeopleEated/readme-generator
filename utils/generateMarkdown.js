@@ -113,7 +113,7 @@ ${data.description}
 [License](#license)
 [Contributing](#contributing)
 [Tests](#tests)
-[Questions](#quesions)
+[Questions](#questions)
 
 ## Installation  
 ${data.install}
